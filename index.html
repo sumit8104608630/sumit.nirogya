@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            font-size: 1.2em;
+        }
+        #floated-container {
+            font-size: .6rem;
+        }
+    </style>
+<head>
+    <link rel="stylesheet" href="setting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirogya | Bill </title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="floated-container"></div>
+    <div class="Smain">
+        <div class="Snavbar">
+            <img class="logo" src="http://127.0.0.1:5500/NirogyaLayout/layout/Images/Logo-Nirogya.svg" alt="">
+            <button onclick="ss()"  class="SSbar"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
+            <button onclick="cl()"  class="Sclosebar"><i class="fa-solid fa-xmark" style="color: #000000;"></i></button>
+            <h1 class="Shead">Setting</h1>
+            <div class="Sbutton">
+                <button onclick="btn1()" class="Sbtn1">Profile</button>
+                <button onclick="btn2()" class="Sbtn2">Notification</button>
+                <button onclick="btn4()" class="Sbtn4">Pay Method</button>
+                <button onclick="btn5()" class="Sbtn5">Terms of Service</button>
+                <button onclick="btn6()" class="Sbtn6">Logout</button>
+            </div>
+        </div>
+        <div class="Spage">
+            <div class="Slinks1">
+                <h1 class="Sheads">Your Trips</h1>
+                <div class="Slink1"> <div><h1 class="Shead2">Orders</h1>order receive confirmation, modification, and modification alerts.</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check1" class="Stoggle"><label class="SSbtn" for="check1"></label></div></div></div>
+                <div class="Slink1"> <div><h1 class="Shead2">Reviews</h1>Receive request to write a reviews, rate your check-in, and upload photos.</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check2" class="Stoggle"><label class="SSbtn" for="check2"></label></div></div></div>
+                <div class="Slink1"> <div><h1 class="Shead2">Message</h1>Receive message from host and guests.</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check3" class="Stoggle"><label class="SSbtn" for="check3"></label></div></div></div>
+            </div>
+            <div class="Slinks2">
+                <h1 class="Sheads">Travel Recommendation</h1>
+                <div class="Slink2"> <div><h1 class="Shead2">Inspiration & Deal</h1>Get Travels idea and suggestion discount and other deals.</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check4" class="Stoggle"><label class="SSbtn" for="check4"></label></div></div></div>
+                <div class="Slink2"> <div><h1 class="Shead2">Local Activities</h1>Suggestion to do things near you</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check5" class="Stoggle"><label class="SSbtn" for="check5"></label></div></div></div>
+            </div>
+            <div class="Slinks3">
+                <h1 class="Sheads">Your Account</h1>
+                <div class="Slink3"> <div><h1 class="Shead2">Orders</h1>order receive confirmation, modification, and modification alerts.</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check6" class="Stoggle"><label class="SSbtn" for="check6"></label></div></div></div>
+                <div class="Slink3"> <div><h1 class="Shead2">Orders</h1>order receive confirmation, modification, and modification alerts.</div>
+                <div class="SSbutton"><div class="Sbtn"><input type="checkbox" id="check7" class="Stoggle"><label class="SSbtn" for="check7"></label></div></div></div>
+            </div>
+        </div>
+        <div class="Sprofile">
+            <div class="Supdate-profile-container">
+                <h2>Update Profile</h2>
+        
+        <div class="Sform-group">
+            <label for="profile-photo">Profile Photo:</label>
+            <input type="file" id="profile-photo" name="profile-photo" accept="image/*" class="Sprofile-photo-input">
+        </div>
+
+        <div class="Sform-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="Sname-input">
+        </div>
+
+        <div class="Sform-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="Semail-input">
+        </div>
+
+        <div class="Sform-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" class="Saddress-input">
+        </div>
+
+        <div class="Sform-group two-column">
+            <div class="Sform-group">
+                <label for="city" class="Scity-state-label">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" class="Scity-input">
+            </div>
+
+            <div class="Sform-group">
+                <label for="state" class="Scity-state-label">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state" class="Sstate-input">
+            </div>
+        </div>
+
+        <div class="Sform-group two-column">
+            <div class="Sform-group">
+                <label for="country" class="Scountry-pincode-label">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country" class="Scountry-input">
+            </div>
+
+            <div class="Sform-group">
+                <label for="pincode" class="Scountry-pincode-label">Pin Code:</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter your pin code" class="Spincode-input">
+            </div>
+        </div>
+
+        <button class="Supdate-button" onclick="updateProfile()">Update Profile</button>
+            </div>
+        </div>
+        <div class="Spayment">
+        <div class="Scontainer">
+            <form>
+            <div class="Srow">
+                <div class="Scol">
+                    <h3 class="Stitle">billing  address</h3>
+                    <div class="Sinputbox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="Sinputbox">
+                        <span>Email :</span>
+                        <input type="text" placeholder="email@gmail.com">
+                    </div>
+                    <div class="Sinputbox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="Sinputbox">
+                        <span>City :</span>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="Sflex">
+                        <div class="Sinputbox">
+                            <span>State :</span>
+                            <input type="text" placeholder="State">
+                        </div>
+                        <div class="Sinputbox">
+                            <span>Zip code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="Scol">
+                    <h3 class="Stitle">Payment</h3>
+                    <div class="Sinputbox">
+                        <span>Card accepted</span>
+                        <img src="	https://www.amequipmentsales.com/wp-content/uploads/2020/05/major-credit-card-logos-png-5.png" alt="">
+                    </div>
+                    <div class="Sinputbox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="Mr.Name">
+                    </div>
+                    
+                    <div class="Sinputbox">
+                        <span>Credit car number :</span>
+                        <input type="text" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="Sinputbox">
+                        <span>Exp month :</span>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="Sflex">
+                        <div class="Sinputbox">
+                            <span>Exp year :</span>
+                            <input type="text" placeholder="2022">
+                        </div>
+                        <div class="Sinputbox">
+                            <span>CW :</span>
+                            <input type="text" placeholder="1234">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="proceed to checkout" class="Ssubmit-btn">
+        </form>
+        </div>
+    </div>
+    </div>
+    
+</body>
+<script>
+    const log=document.querySelector(".logo");
+    const bt4=document.querySelector(".Sbtn4")
+const container=document.querySelector(".Spayment")
+const prof= document.querySelector(".Sprofile")
+const n = document.querySelector(".Snavbar");
+const s = document.querySelector(".SSbar");
+const h = document.querySelector(".Shead");
+const b = document.querySelector(".Sbutton");
+const p = document.querySelector(".Spage");
+const b2= document.querySelector(".Sbtn2");
+const b1=document.querySelector(".Sbtn1");
+const c = document.querySelector(".Sclosebar");
+prof.classList.add("Sadd")
+b1.classList.add("Sbbg");
+function btn4(){
+    bt4.classList.add("Sbg4")
+    container.classList.add("Scontain")
+    p.classList.remove("Sactive");
+    b2.classList.remove("Sbg");
+    prof.classList.remove("Sadd")
+    b1.classList.remove("Sbbg");
+    n.classList.remove("Sdal");
+    h.classList.remove("Sheat");
+    b.classList.remove("Sbag");
+    prof.classList.remove("Sadd");
+    b1.classList.remove("Sbbg");
+    c.classList.remove("Saddcl");
+    s.classList.remove("Ssbar");
+}
+function ss() {
+    n.classList.add("Sdal");
+    h.classList.add("Sheat");
+    b.classList.add("Sbag");
+    s.classList.add("Ssbar")
+    c.classList.add("Saddcl")  
+    log.classList.remove("logos")  
+}
+
+function btn2() {
+    bt4.classList.remove("Sbg4")
+    container.classList.remove("Scontain")
+    p.classList.add("Sactive");
+    b2.classList.add("Sbg");
+    n.classList.remove("Sdal");
+    h.classList.remove("Sheat");
+    b.classList.remove("Sbag");
+    prof.classList.remove("Sadd");
+    b1.classList.remove("Sbbg");
+    c.classList.remove("Saddcl");
+    s.classList.remove("Ssbar");
+}
+function btn1(){
+    bt4.classList.remove("Sbg4")
+    container.classList.remove("Scontain")
+    n.classList.remove("Sdal");
+    h.classList.remove("Sheat");
+    b.classList.remove("Sbag");
+    p.classList.remove("Sactive");
+    prof.classList.add("Sadd")
+    b2.classList.remove("Sbg");
+    b1.classList.add("Sbbg");
+    c.classList.remove("Saddcl");
+    s.classList.remove("Ssbar");
+}
+log.classList.add("logos")
+function cl() {
+n.classList.remove("Sdal");
+h.classList.remove("Sheat");
+b.classList.remove("Sbag");
+c.classList.remove("Saddcl");
+s.classList.remove("Ssbar");
+log.classList.add("logos")
+
+}   
+</script>    
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const headerContainer = document.getElementById('floated-container');
+        const headerContainer2 = document.getElementById('header-container');
+
+        
+        function openMenu() {
+            let menu = document.querySelector('.menu');
+            let togg = document.querySelector(".toggle");
+            menu.classList.toggle('active');
+
+        }
+
+            fetch("animationNav/index.html")
+            .then(response => response.text())
+            .then(html => {
+                headerContainer.innerHTML = html;
+                const toggle = headerContainer.querySelector('.toggle');
+                toggle.addEventListener('click', openMenu);
+            });
+            
+            fetch("layout/header.html")
+            .then(response => response.text())
+            .then(html => {
+                headerContainer2.innerHTML = html;
+                //setting the name for the Page...
+                const title = headerContainer2.querySelector('.current-Page');
+                title.innerHTML = "Billing"
+            });
+            
+            });
+            
+</script>
+</html>
